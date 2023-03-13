@@ -1,0 +1,16 @@
+body{
+    background-color: F6FCFF;
+    background-image: url(../images/main_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+
+}
+.character{
+    width: 100%; /* 이렇게만 적으면 창이 커질때 꽉찬 이미지가 출력된다 */
+    max-width: 364px;/* 그래서 최대로 커지는 값을 설정해줘야한다 */
+    margin-left: auto;
+    margin-right: auto; /* 적용이안된다 왜냐면 인라인 = 이미지= 글자요소라서  */
+    display: block; /* 글자요소를 상자요소로 바꾸면 된다 */
+    margin-bottom: 40px;
+}
+
