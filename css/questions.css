@@ -1,0 +1,78 @@
+body {  /*배경 */
+    background-image: url(../images/questions_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.progress{ /*하얀색 기다란 막대기 */
+    max-width: 500px;
+    height: 20px;
+    background-color: white;
+    margin-left: auto;  /*가운데정렬 위아래세트로 적어줘야함 */
+    margin-right: auto; /*가운데정렬 위아래세트로 적어줘야함 */
+    border-radius: 10px; 
+    margin-bottom: 60px;
+}
+
+.progress .value { /*진행과정을 나타내는 바를 만드는 중 */
+    width: 10%;
+    height: 20px;
+    background-color: #FFB103;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.question-box {
+    max-width: 420px;
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px #DDE2E8;
+    
+}
+
+.question-box .number {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: #2ec7a6;
+    margin-bottom: 30px;
+
+}
+
+.question-box .question {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5; /*줄 간격*/
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.question-box .choice {
+    border-radius: 120px;
+    font-size: 22px;
+}
+
+@media (max-width :640px){  /*모바일에서 확인할때 사이즈조절*/
+    .progress {
+        margin-bottom: 30px;
+        
+    }
+    .question-box{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .question-box .question{
+        font-size: 28px;
+
+    }
+
+    .question-box .choice{
+        font: 20px;
+    }
+
+}
